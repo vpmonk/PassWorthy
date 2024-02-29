@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PassWorthy</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="css/main.jpg">
+  
+</head>
+<body>
+
+<div class="container">
+
+  <h1 id="main">PassWorthy</h1>
+
+  <div class="result-container">
+    <span id="result"></span>
+    
+  </div>
+
+  <div class="settings">
+
+    <label>
+      Password Length:
+      <input type="number" id="length" min="4" max="20">
+    </label>
+
+    <label>
+      Uppercase Letters:
+      <input type="checkbox" id="uppercase">
+    </label>
+
+    <label>
+     Lowercase Letters:
+      <input type="checkbox" id="lowercase">
+    </label>
+
+    <label>
+      Numbers:
+      <input type="checkbox" id="numbers">
+    </label>
+
+    <label>
+      Symbols:
+      <input type="checkbox" id="symbols">
+    </label>
+
+  </div>
+  <div id="btnmain">
+    <button class="generate" id="generate" onclick="genpass()">Generate Password</button>
+    <button class="generate" id="reset" onclick="copy()">copy</button>
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
